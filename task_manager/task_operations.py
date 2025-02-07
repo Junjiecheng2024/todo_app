@@ -23,5 +23,5 @@ class TaskManager:
         else:
             print("\nTo-Do List:")
             for idx, task in enumerate(self.tasks, start=1):
-                status = "✓" if task.completed else "✗"
-                print(f"{idx}. {task.title} [{status}] - {task.description}")
+                print(f"{idx}. {task.title} - {task.description}")
+
