@@ -1,11 +1,7 @@
 class Task:
-    def __init__(self, title, description="", completed=False):
+    def __init__(self, title, description=""):
         self.title = title
         self.description = description
-        self.completed = completed
-
-    def mark_completed(self):
-        self.completed = True
 
     def __repr__(self):
-        return f"Task(title='{self.title}', description='{self.description}', completed={self.completed})"
+        return f"Task(title='{self.title}', description='{self.description}')"
