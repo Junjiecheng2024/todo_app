@@ -12,5 +12,8 @@ def load_tasks():
         with open(TASK_FILE, "r") as f:
             task_dicts = json.load(f)
             return [Task(**task) for task in task_dicts]
-    except (FileNotFoundError, json.JSONDecodeError):
-        return []
+    except FileNotFoundError:
+        print("No task file found. Starting with an empty task list.")
+    except json.JSONDecodeError:
+        print("Error: Task file is corrupted. Starting with an empty task list.")
+    return []
