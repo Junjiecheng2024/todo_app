@@ -1,7 +1,7 @@
 # Modularized To-Do List Application
 
 ## Overview
-This project is a modularized to-do list application written in Python. It allows users to add, remove, and mark tasks as completed, with data persistence using JSON.
+This project is a modularized to-do list application written in Python. It allows users to add, remove, and list tasks, with data persistence using JSON.
 
 ## Project Structure
 ```
@@ -39,7 +39,7 @@ python main.py
 ## Usage
 - **Add Task**: Enter "1" and provide a title and description.
 - **Remove Task**: Enter "2" and specify the task title to remove.
-- **Mark Task as Completed**: Enter "3" and specify the task title.
+- **List Tasks**: Enter "3" to display all tasks.
 - **Exit**: Enter "4" to quit the application.
 
 ## Data Persistence
